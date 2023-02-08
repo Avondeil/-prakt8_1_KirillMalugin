@@ -24,7 +24,7 @@ class Exam (var name:String, var item:String, var date:String,var res:Double) {
         b=true;
         if (name >= "a" && name <= "z" || name >= "а" && name <= "я" || name >= "A" && name <= "Z" || name >= "А" && name <= "Я") {
             if (item >= "a" && item <= "z" || item >= "а" && item <= "я" || item >= "A" && item <= "Z" || item >= "А" && item <= "Я") {
-                if (res < 0 && res > 5) {println("Некорректный ввод числа"); b=false;}
+                if (res < 0 || res > 5) {println("Некорректный ввод числа"); b=false;}
             }
             else
             {
